@@ -86,7 +86,7 @@ body {
 .boxes {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 31px;
   flex-wrap: wrap;
 }
 
