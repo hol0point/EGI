@@ -93,7 +93,6 @@ body {
 
 .box {
   width: 180px;
-  text-align: center;
 }
 
 .square {
@@ -191,4 +190,9 @@ blockquote p {
 
 h2 {
   color: blue;
+}
+
+.everyprint {
+  color: black;
+  background-color: #007bff;
 }
