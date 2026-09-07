@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+}
+.header {
+  background-color: #2f39a9;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 15%;
+  font-size: 12px;
+  gap: 80px;
+}
+
+.everyprint {
+  background-color: #ff467a;
+  padding: 10px;
+  height: 1000px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+#WIR {
+  background-color: #ffd51e;
+}
+
+.heroheader {
+  background-color: #ff467a;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+<nav class="header" aria-label="Main navigation">
+  <a href="../index.html" class="nav-link">HOME</a>
+
+  <div class="dropdown">
+    <button
+      class="dropdown-button"
+      type="button"
+      aria-expanded="false"
+      aria-controls="machine-menu"
+    >
+      MACHINES <span aria-hidden="true">▾</span>
+    </button>
+
+    <div id="machine-menu" class="dropdown-menu">
+      <a href="../machines/UV84G2.html">UV84GEN2</a>
+      <a href="../machines/UV84.html">UV84</a>
+    </div>
+  </div>
+</nav>
