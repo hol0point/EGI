@@ -7,34 +7,82 @@
     <link rel="stylesheet" href="UV84.css" />
   </head>
   <body>
-    <div class="header">
-      <a href="../index.html"><h1>HOME</h1></a>
-      <a href="../machines/UV84G2.html"><h1>UV84GEN2</h1></a>
-      <a href="#"><h1>UV84</h1></a>
+    <nav class="header" aria-label="Main navigation">
+      <a href="../index.html" class="nav-link">HOME</a>
+
+      <div class="dropdown">
+        <button
+          class="dropdown-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="machine-menu"
+        >
+          MACHINES <span aria-hidden="true">▾</span>
+        </button>
+
+        <div id="machine-menu" class="dropdown-menu">
+          <a href="../machines/UV84G2.html">UV84GEN2</a>
+          <a href="../machines/UV84.html">UV84</a>
+        </div>
+      </div>
+    </nav>
+    <h1>UV84</h1>
+    <div class="hero-section">
+      <ul>
+        <li>Serial Number: ##########</li>
+        <li>White Ink Type Gen 5:</li>
+        <li>Date Purchased: 8/14/2021</li>
+      </ul>
+      <figure>
+        <img src="../images/UV84.jpg" alt="UV84" class="zoomable" />
+        <div id="imageModal" class="image-modal" aria-hidden="true">
+          <img id="modalImage" alt="" />
+        </div>
+      </figure>
     </div>
-    <div class="heroheader">
-      <h1>UV84</h1>
+    <div class="everyday">
+      <ol>
+        <h2>*Do These Steps at the Start of Every Day*</h2>
+        <li>Turn on heaters and wait for them to reach temp.</li>
+        <li>Click on the Maintenance button in the Print Control Software.</li>
+        <li>Push the purge buttons as shown <a href="">here</a></li>
+        <li>
+          Use a lint free microfiber cloth to wipe the print heads back to
+          front.
+        </li>
+      </ol>
     </div>
     <div class="everyprint">
-      <h1>Begining of Every Day</h1>
-      <ul>
-        <li>Turn on white ink heaters using switch on top/side of carriage</li>
-
+      <ol>
+        <h2>*Do These Steps Before Every Print*</h2>
+        <li>Apply thin layer of adhesion promoter to material.</li>
         <li>
-          When starting the day make sure the dome light is solid Amber. If
-          blinking follow the
-          <a href="#WIR">White Ink Recovery Instructions</a>
-          white ink recover steps.
+          Move the height detector over the material. Triangulate
+          <a href="">these</a> arrows to see where it will detect.
         </li>
-        <li>Perform purge and wipe. Wipe back to front.</li>
-      </ul>
+        <li>
+          Click the Height Control button in the Print Control Software and
+          click Auto Detect then hit No when it asks if you want to go to
+          specific location. Wait for it to detect height.
+        </li>
+      </ol>
     </div>
 
-    <!-- Other content here -->
+    <script>
+      const dropdown = document.querySelector(".dropdown");
+      const button = document.querySelector(".dropdown-button");
 
-    <section id="WIR">
-      <h2>White Ink Recovery Instructions</h2>
-      <p>Email us at hello@example.com.</p>
-    </section>
+      button.addEventListener("click", () => {
+        const isOpen = dropdown.classList.toggle("open");
+        button.setAttribute("aria-expanded", isOpen);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove("open");
+          button.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
   </body>
 </html>
