@@ -3,10 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>UV84G2</title>
+    <link rel="stylesheet" href="UV84G2.css" />
   </head>
   <body>
-    <h2>test</h2>
+    <nav class="header" aria-label="Main navigation">
+      <a href="../index.html" class="nav-link">HOME</a>
+
+      <div class="dropdown">
+        <button
+          class="dropdown-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="machine-menu"
+        >
+          MACHINES <span aria-hidden="true">▾</span>
+        </button>
+
+        <div id="machine-menu" class="dropdown-menu">
+          <a href="../machines/UV84G2.html">UV84GEN2</a>
+          <a href="../machines/UV84.html">UV84</a>
+        </div>
+      </div>
+    </nav>
+    <h1>UV84G2</h1>
+    <div class="hero-section">
+      <ul>
+        <li>Serial Number: ##########</li>
+        <li>White Ink Type Gen 6:</li>
+        <li>Date Purchased: 3/24/2024</li>
+      </ul>
+      <figure>
+        <img src="../images/UV84G2.png" alt="UV84G2" />
+        <div id="imageModal" class="image-modal" aria-hidden="true">
+          <img id="modalImage" alt="" />
+        </div>
+      </figure>
+    </div>
+    <div class="everyday">
+      <ol>
+        <h2>*Do These Steps at the Start of Every Day*</h2>
+        <li>Turn on heaters and wait for them to reach temp.</li>
+        <li>Click on the Maintenance button in the Print Control Software.</li>
+        <li>Push the purge buttons as shown <a href="">here</a></li>
+        <li>
+          Use a lint free microfiber cloth to wipe the print heads back to
+          front.
+        </li>
+      </ol>
+    </div>
+    <div class="everyprint">
+      <ol>
+        <h2>*Do These Steps Before Every Print*</h2>
+        <li>Apply thin layer of adhesion promoter to material.</li>
+        <li>
+          Move the height detector over the material. Triangulate
+          <a href="">these</a> arrows to see where it will detect.
+        </li>
+        <li>
+          Click the Height Control button in the Print Control Software and
+          click Auto Detect then hit No when it asks if you want to go to
+          specific location. Wait for it to detect height.
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      const dropdown = document.querySelector(".dropdown");
+      const button = document.querySelector(".dropdown-button");
+
+      button.addEventListener("click", () => {
+        const isOpen = dropdown.classList.toggle("open");
+        button.setAttribute("aria-expanded", isOpen);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.classList.remove("open");
+          button.setAttribute("aria-expanded", "false");
+        }
+      });
+    </script>
   </body>
 </html>

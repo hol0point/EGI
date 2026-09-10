@@ -6,7 +6,7 @@
 
 .header {
   padding: 16px;
-  background-color: #df301c;
+  background-color: #092328;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -60,7 +60,7 @@
   display: block;
 }
 h1 {
-  background-color: #ff9100;
+  background-color: #12544f;
   font-size: 72px;
   color: white;
   display: flex;
@@ -68,13 +68,13 @@ h1 {
 }
 
 .hero-section {
-  background-color: #ff9100;
+  background-color: #12544f;
   display: flex;
   justify-content: flex-end;
   padding: 25px 15%;
   gap: 40px;
-  font-size: 32px;
-  color: rgb(248, 245, 245);
+  font-size: 24px;
+  color: white;
 }
 
 .hero-section img {
@@ -82,27 +82,26 @@ h1 {
   width: 320px;
   height: auto;
   border-radius: 8px;
+  background-color: white;
 }
 
 .everyday {
-  background-color: #fff1d1;
-  color: black;
+  background-color: #5a998e;
   font-size: 32px;
   padding: 32px;
 }
 .everyprint {
-  background-color: #00b7cd;
+  background-color: #8bbb92;
   font-size: 32px;
   padding: 32px;
-  color: white;
 }
 h2 {
   padding-bottom: 24px;
 }
 
-.recovery {
-  background-color: #df301c;
+/* .recovery {
+  background-color: #092328;
   font-size: 32px;
   padding: 32px;
   color: white;
-}
+} */
