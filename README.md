@@ -1,0 +1,2 @@
+# EGI
+egi training page
