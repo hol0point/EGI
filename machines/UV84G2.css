@@ -1,0 +1,107 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  padding: 16px;
+  background-color: #092328;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  color: white;
+}
+
+.nav-link,
+.dropdown-button {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 180px;
+  z-index: 10;
+  background: rgb(235, 205, 205);
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #111;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background: #eee;
+}
+
+/* Opens the menu when JavaScript adds .open */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+h1 {
+  background-color: #5a998e;
+  font-size: 72px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section {
+  background-color: #5a998e;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 15%;
+  gap: 40px;
+  font-size: 24px;
+  color: white;
+}
+
+.hero-section img {
+  display: flex;
+  width: 320px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.everyday {
+  background-color: #5a998e;
+  font-size: 32px;
+  padding: 32px;
+}
+.everyprint {
+  background-color: #5a998e;
+  font-size: 32px;
+  padding: 32px;
+}
+h2 {
+  padding-bottom: 24px;
+}
+
+/* .recovery {
+  background-color: #092328;
+  font-size: 32px;
+  padding: 32px;
+  color: white;
+} */
