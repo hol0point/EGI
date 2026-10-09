@@ -32,9 +32,17 @@
   font-size: 1.6em;
 }
 h1 {
-  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 3.5rem;
 }
 
+h2 {
+  margin-left: 80px;
+  font-style: italic;
+  font-size: 2.5rem;
+}
 .heroimage img {
   height: 420px;
 }
